@@ -1,21 +1,28 @@
-function mySum(a1, b1) {
-    let result = a1 + b1;
-    return "Wynik dodawania wynosi " + result;
-}
-function myMultiply(a1, b1) {
-    let result = a1 * b1;
-    return "Wynik mnożenia wynosi " + result;
-}
-function mySubtracting(a1, b1) {
-    let result = a1 - b1;
-    if (result > 0) {
-        return "Wynik odejmowania wynosi " + result;
+let number1 = 2;
+let number2 = 2;
+
+function mymath(num1, num2) {
+    let sum = num1 + num2;
+    let odej = num1 - num2;
+    let multiply = num1 * num2;
+
+    if (sum >= 0) {
+        console.log("Wynik dodawania wynosi " + sum);
     }
     else {
-       return "Wynik jest nieprawidłowy";
+        console.log("Wynik jest nieprawidłowy");
+    }
+    if (odej >= 0) {
+        console.log("Wynik odejmowania wynosi " + odej);
+    }
+    else {
+        console.log("Wynik jest nieprawidłowy");
+    }
+    if (multiply >= 0) {
+        console.log("Wynik mnożenia wynosi " + multiply);
+    }
+    else {
+        console.log("Wynik jest nieprawidłowy");
     }
 }
-
-console.log(mySum(2, 3));
-console.log(myMultiply(2, 3));
-console.log(mySubtracting(2, 3));
+mymath(-2, 2);
